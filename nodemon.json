@@ -1,0 +1,19 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "./src/test",
+    "./dist/**/*"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node"
+  },
+  "watch": ["index.ts", "."],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js ts json yml",
+  "exec": "yarn build"
+}
